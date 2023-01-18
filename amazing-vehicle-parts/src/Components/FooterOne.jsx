@@ -1,0 +1,61 @@
+import { GridItem, Flex,Text, Box } from '@chakra-ui/react'
+
+
+
+
+function FooterOne(){
+    return (
+        <>
+
+           <div style={{width:'95%', height:'120px',display: "flex", alignItems: "center",justifyContent:"space-arround",margin:'auto', borderRadius:'12px'}}> 
+          
+          <Flex  w={"100%"} gap={6} padding={"30px"} borderRadius={"20px"} bg="#1E1E1E" alignItems={"center"} justifyContent={"space-evenly"}>
+
+          <Flex direction={'column'} justifyContent={'center'} alignItems={'center'} gap={2}>
+          <GridItem w='50px' h='50px' borderRadius={'50%'} border={'3px solid #ffcc00'} alignItems={"center"} justifyContent={"center"}>
+              <img style={{margin:"auto",marginTop:"20%"}} src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0iI0ZGRiIgYXJpYS1oaWRkZW49InRydWUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPlJlY2VpcHQgSWNvbjwvdGl0bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04LjI0MDAxIDI5LjEzMzJDOC4zNjAzOCAyOS4yNjI3IDguNTI5ODcgMjkuMzM1MyA4LjcwNjY4IDI5LjMzMzJIOS4wOTMzNEM5LjI3MDE1IDI5LjMzNTMgOS40Mzk2NCAyOS4yNjI3IDkuNTYwMDEgMjkuMTMzMkwxMiAyNi42NjY1QzEyLjI2MzggMjYuNDEwOCAxMi42ODI5IDI2LjQxMDggMTIuOTQ2NyAyNi42NjY1TDE1LjM2IDI5LjA3OThDMTUuNDgwNCAyOS4yMDk0IDE1LjY0OTkgMjkuMjgyIDE1LjgyNjcgMjkuMjc5OEgxNi4yMTMzQzE2LjM5MDEgMjkuMjgyIDE2LjU1OTYgMjkuMjA5NCAxNi42OCAyOS4wNzk4TDE5LjA5MzMgMjYuNjY2NUMxOS4zNTE1IDI2LjQzNTYgMTkuNzQxOSAyNi40MzU2IDIwIDI2LjY2NjVMMjIuNDEzMyAyOS4wNzk4QzIyLjUzMzcgMjkuMjA5NCAyMi43MDMyIDI5LjI4MiAyMi44OCAyOS4yNzk4SDIzLjI2NjdDMjMuNDQzNSAyOS4yODIgMjMuNjEzIDI5LjIwOTQgMjMuNzMzMyAyOS4wNzk4TDI2LjI4IDI2LjY2NjVDMjYuNTI2MyAyNi40MTgyIDI2LjY2NTIgMjYuMDgzIDI2LjY2NjcgMjUuNzMzMlYzLjk5OTg0QzI2LjY2NjcgMy4yNjM0NiAyNi4wNjk3IDIuNjY2NSAyNS4zMzMzIDIuNjY2NUg2LjY2NjY4QzUuOTMwMyAyLjY2NjUgNS4zMzMzNCAzLjI2MzQ2IDUuMzMzMzQgMy45OTk4NFYyNS42Nzk4QzUuMzM4MjUgMjYuMDMyOSA1LjQ3NjM3IDI2LjM3MSA1LjcyMDAxIDI2LjYyNjVMOC4yNDAwMSAyOS4xMzMyWk0xNy4zMzM0IDE3Ljk5OTlDMTcuMzMzNCAxOC4zNjgxIDE3LjAzNDkgMTguNjY2NiAxNi42NjY3IDE4LjY2NjZIMTEuMzMzNEMxMC45NjUyIDE4LjY2NjYgMTAuNjY2NyAxOC4zNjgxIDEwLjY2NjcgMTcuOTk5OVYxNi42NjY2QzEwLjY2NjcgMTYuMjk4NCAxMC45NjUyIDE1Ljk5OTkgMTEuMzMzNCAxNS45OTk5SDE2LjY2NjdDMTcuMDM0OSAxNS45OTk5IDE3LjMzMzQgMTYuMjk4NCAxNy4zMzM0IDE2LjY2NjZWMTcuOTk5OVpNMjAuNjY2NyAxMy4zMzMyQzIxLjAzNDkgMTMuMzMzMiAyMS4zMzM0IDEzLjAzNDcgMjEuMzMzNCAxMi42NjY1VjExLjMzMzJDMjEuMzMzNCAxMC45NjUgMjEuMDM0OSAxMC42NjY1IDIwLjY2NjcgMTAuNjY2NUgxMS4zMzM0QzEwLjk2NTIgMTAuNjY2NSAxMC42NjY3IDEwLjk2NSAxMC42NjY3IDExLjMzMzJWMTIuNjY2NUMxMC42NjY3IDEzLjAzNDcgMTAuOTY1MiAxMy4zMzMyIDExLjMzMzQgMTMuMzMzMkgyMC42NjY3WiIgZmlsbD0iI0ZGRiIvPjwvc3ZnPg==" alt="" />
+            
+            </GridItem>
+            <Text color={'#FFCC00'}>Order Lookup</Text>
+          </Flex>
+            
+
+          <Flex direction={'column'} justifyContent={'center'} alignItems={'center'} gap={2}>
+            
+          <GridItem w='50px' h='50px' borderRadius={'50%'} border={'3px solid #ffcc00'} alignItems={"center"} justifyContent={"center"}>
+               <img style={{margin:"auto",marginTop:"20%"}} src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0iI0ZGRiIgYXJpYS1oaWRkZW49InRydWUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPlF1ZXN0aW9uIE1hcmsgUmVkZXNpZ24gSWNvbjwvdGl0bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0yNCA0QzEyLjk1NDMgNCA0IDEyLjk1NDMgNCAyNEM0IDM1LjA0NTcgMTIuOTU0MyA0NCAyNCA0NEMzNS4wNDU3IDQ0IDQ0IDM1LjA0NTcgNDQgMjRDNDQgMTguNjk1NyA0MS44OTI5IDEzLjYwODYgMzguMTQyMSA5Ljg1Nzg2QzM0LjM5MTQgNi4xMDcxNCAyOS4zMDQzIDQgMjQgNFpNMjYgMzVDMjYgMzUuNTUyMyAyNS41NTIzIDM2IDI1IDM2SDIzQzIyLjQ0NzcgMzYgMjIgMzUuNTUyMyAyMiAzNVYzM0MyMiAzMi40NDc3IDIyLjQ0NzcgMzIgMjMgMzJIMjVDMjUuNTUyMyAzMiAyNiAzMi40NDc3IDI2IDMzVjM1Wk0yNy43NiAyNC41OEMzMC4xMzEgMjMuODEyNiAzMS43NDMxIDIxLjYxMiAzMS43NiAxOS4xMlYxOEMzMS43NiAxNi40NzIzIDMxLjE1MzEgMTUuMDA3MyAzMC4wNzI5IDEzLjkyNzFDMjguOTkyNyAxMi44NDY5IDI3LjUyNzYgMTIuMjQgMjYgMTIuMjRIMjJDMTguODE4OCAxMi4yNCAxNi4yNCAxNC44MTg4IDE2LjI0IDE4VjE5QzE2LjI0IDE5LjU1MjMgMTYuNjg3NyAyMCAxNy4yNCAyMEgxOC43NkMxOS4zMTIzIDIwIDE5Ljc2IDE5LjU1MjMgMTkuNzYgMTlWMThDMTkuNzYgMTYuNzYyOSAyMC43NjI5IDE1Ljc2IDIyIDE1Ljc2SDI2QzI2LjYwNzggMTUuNzM4MyAyNy4xOTgzIDE1Ljk2NDYgMjcuNjM1OSAxNi4zODcxQzI4LjA3MzQgMTYuODA5NiAyOC4zMjA0IDE3LjM5MTggMjguMzIgMThWMTkuMTJDMjguMzIyIDIwLjA4NDYgMjcuNzExNCAyMC45NDQxIDI2LjggMjEuMjZMMjQuOSAyMS44OEMyMy4zNjM1IDIyLjM4NzggMjIuMzI0MyAyMy44MjE4IDIyLjMyIDI1LjQ0VjI3QzIyLjMyIDI3LjU1MjMgMjIuNzY3NyAyOCAyMy4zMiAyOEgyNC44NEMyNS4zOTIzIDI4IDI1Ljg0IDI3LjU1MjMgMjUuODQgMjdWMjUuNDRDMjUuODQgMjUuMzM1IDI1LjkwMzEgMjUuMjQwNCAyNiAyNS4yTDI3Ljc2IDI0LjU4WiIgZmlsbD0id2hpdGUiLz48L3N2Zz4=" alt="" />
+            </GridItem>
+            <Text color={'#FFCC00'}>Help Desk</Text>
+          </Flex>
+
+          <Flex direction={'column'} justifyContent={'center'} alignItems={'center'} gap={2}>
+            <GridItem w='50px' h='50px'  borderRadius={'50%'}>
+               <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OSIgZmlsbD0iI0ZGRiIgYXJpYS1oaWRkZW49InRydWUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkNpcmNsZSBVc2VyIFBpbjwvdGl0bGU+PGNpcmNsZSBjeD0iMjQuODMzIiBjeT0iMjQuNTUwNCIgcj0iMjIuNSIgZmlsbD0iIzFFMUUxRSIgc3Ryb2tlPSIjRkZDQzAwIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0LjgzMyAyMi4wNTA0QzE0LjgzMyAxNi41Mjc2IDE5LjMxMDIgMTIuMDUwNCAyNC44MzMgMTIuMDUwNEMzMC4zNTU5IDEyLjA1MDQgMzQuODMzIDE2LjUyNzYgMzQuODMzIDIyLjA1MDRDMzQuODMzIDI2Ljc0NiAzMi41NTM0IDI4LjU4MjkgMzAuNDI4MyAzMC4yOTU1QzI5LjAzNDYgMzEuNDE4NiAyNy43MDczIDMyLjQ4ODEgMjcuMTMzIDM0LjI3NTRMMjYuNDk1NSAzNi4yMDA0QzI2LjMxNjggMzYuNzMyMSAyNS44MDU3IDM3LjA3OTcgMjUuMjQ1NSAzNy4wNTA0SDI0LjU0NTVDMjMuOTg1MyAzNy4wNzk3IDIzLjQ3NDIgMzYuNzMyMSAyMy4yOTU1IDM2LjIwMDRMMjIuNjU4IDM0LjI3NTRDMjIuMDYwNyAzMi40OTM0IDIwLjcxNDggMzEuNDI0OSAxOS4zMDQ4IDMwLjMwNTRDMTcuMTQ0MyAyOC41OSAxNC44MzMgMjYuNzU1IDE0LjgzMyAyMi4wNTA0Wk0yNC44MzMgMTUuNDg3OUMyNi4zODYzIDE1LjQ4NzkgMjcuNjQ1NSAxNi43NDcxIDI3LjY0NTUgMTguMzAwNEMyNy42NDU1IDE5Ljg1MzcgMjYuMzg2MyAyMS4xMTI5IDI0LjgzMyAyMS4xMTI5QzIzLjI3OTcgMjEuMTEyOSAyMi4wMjA1IDE5Ljg1MzcgMjIuMDIwNSAxOC4zMDA0QzIyLjAxNzIgMTcuNTUzNSAyMi4zMTI0IDE2LjgzNjIgMjIuODQwNiAxNi4zMDhDMjMuMzY4OCAxNS43Nzk4IDI0LjA4NjEgMTUuNDg0NiAyNC44MzMgMTUuNDg3OVpNMjQuODMzIDI5LjU1MDRDMjIuNDIxNCAyOS41NDIxIDIwLjE2MDggMjguMzc0NyAxOC43NTggMjYuNDEyOUwxOS42MjA1IDI0LjY3NTRDMjAuMDQ2MiAyMy44MzA3IDIwLjkxMjEgMjMuMjk4NiAyMS44NTggMjMuMzAwNEgyNy44MDhDMjguNzUzOSAyMy4yOTg2IDI5LjYxOTkgMjMuODMwNyAzMC4wNDU1IDI0LjY3NTRMMzAuOTA4IDI2LjQxMjlDMjkuNTA1MiAyOC4zNzQ3IDI3LjI0NDcgMjkuNTQyMSAyNC44MzMgMjkuNTUwNFoiIGZpbGw9IndoaXRlIi8+PC9zdmc+" alt="" />
+            </GridItem>
+           <Text color={'#FFCC00'}>Store Locator</Text>
+            </Flex>
+
+            <Flex direction={'column'} justifyContent={'center'} alignItems={'center'} gap={2}>
+            
+           <GridItem w='50px' h='50px'  borderRadius={'50%'}>
+               <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OSIgZmlsbD0iI0ZGRiIgYXJpYS1oaWRkZW49InRydWUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPkNpcmNsZSBTdG9yZSBJY29uPC90aXRsZT48Y2lyY2xlIGN4PSIyNC44MzMiIGN5PSIyNC42Njk0IiByPSIyMi41IiBmaWxsPSIjMUUxRTFFIiBzdHJva2U9IiNGRkNDMDAiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0yNC44MzMgMTMuMzAyMkwxNS4wNjc0IDE3LjY0MzFDMTQuMTYzNiAxOC4wNDQzIDEzLjU4MyAxOC45MzcgMTMuNTgzIDE5LjkyNThWMzUuOTE5NEgxNy4zMzNWMjIuMTY5NEgzMi4zMzNWMzUuOTE5NEgzNi4wODNWMTkuOTI1OEMzNi4wODMgMTguOTM4MyAzNS41MDI0IDE4LjA0NDMgMzQuNTk4NiAxNy42NDMxTDI0LjgzMyAxMy4zMDIyWk0xOS44MzMgMjQuNjY5NFYzNS45MTk0SDIzLjU4M1YzMy40MTk0SDI2LjA4M1YzNS45MTk0SDI5LjgzM1YyNC42Njk0SDE5LjgzM1oiIGZpbGw9IndoaXRlIi8+PC9zdmc+" alt="" />
+            </GridItem>
+            <Text color={'#FFCC00'}>In Store Services</Text>
+           </Flex>
+              
+           <Flex direction={'column'} justifyContent={'center'} alignItems={'center'} gap={2}>
+           <GridItem w='50px' h='50px'  borderRadius={'50%'} border={'3px solid #ffcc00'} alignItems={"center"} justifyContent={"center"}>
+               <img style={{margin:"auto",marginTop:"20%"}} src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAxNyAyOCIgZmlsbD0iI0ZGRiIgYXJpYS1oaWRkZW49InRydWUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHRpdGxlPk1vYmlsZSBJY29uPC90aXRsZT48cGF0aCBkPSJNMi42MzMzOSAyNy40MjU1SDE0LjUzODJDMTUuODUzMSAyNy40MjU1IDE2LjkxOTEgMjYuMzQwMSAxNi45MTkxIDI1LjAwMTJWMy4xODMwM0MxNi45MTkxIDEuODQ0MTYgMTUuODUzMSAwLjc1ODc4OSAxNC41MzgyIDAuNzU4Nzg5SDIuNjMzMzlDMS4zMTg0MyAwLjc1ODc4OSAwLjI1MjQ0MSAxLjg0NDE2IDAuMjUyNDQxIDMuMTgzMDNWMjUuMDAxMkMwLjI1MjQ0MSAyNi4zNDAxIDEuMzE4NDMgMjcuNDI1NSAyLjYzMzM5IDI3LjQyNTVaTTMuMTUwOTkgMjAuNDYyNVYzLjcyMTc1SDE0LjAyMDZWMjAuNDYyNUgzLjE1MDk5Wk04LjU4NTc3IDI1LjEzMzJDNy45MjgyOSAyNS4xMzMyIDcuMzk1MjkgMjQuNTkwNSA3LjM5NTI5IDIzLjkyMTFDNy4zOTUyOSAyMy4yNTE3IDcuOTI4MjkgMjIuNzA5IDguNTg1NzcgMjIuNzA5QzkuMjQzMjUgMjIuNzA5IDkuNzc2MjUgMjMuMjUxNyA5Ljc3NjI1IDIzLjkyMTFDOS43NzYyNSAyNC41OTA1IDkuMjQzMjUgMjUuMTMzMiA4LjU4NTc3IDI1LjEzMzJaIiBmaWxsPSIjRkZGIi8+PC9zdmc+" alt="" />
+            </GridItem>
+            <Text color={'#FFCC00'}>Mobile App</Text>
+           </Flex>
+           
+
+        </Flex>
+
+           </div> 
+
+        </>
+    )
+}
+export  default FooterOne;
