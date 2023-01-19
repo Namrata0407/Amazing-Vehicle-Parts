@@ -40,8 +40,8 @@ const NavLink = ({ children }) => (
   </Link>
 );
 
-const NewArray = ["Accessories","Beauty & Wellness","Clothing","Dresses","Home & Feature","Jewelry","Petites","Plus","Shoes","bhlndWeddings","The Valentine's Day Shop","New Today: Clothing & Accessories","The Must-Haves","House & Hackney","Accessories","Beauty & Wellness","Clothing","Dresses","Home & Feature","Jewelry","Petites","Plus","Shoes","bhlndWeddings","The Valentine's Day Shop","New Today: Clothing & Accessories","The Must-Haves","House & Hackney"];
-const Dresses = ["Shop All Dresses","New!","Top Rated Dresses","Occession & Party Dress","Loungr & Casual Dresses","Formal Dresses","Maxi Dress","Mini & Tunic Dress","Middi Dress","Petie Dresses","Plus Dresses","Wedding Guest Dresses","BHLND Weddings","Shop All Dresses","New!","Top Rated Dresses","Occession & Party Dress","Loungr & Casual Dresses","Formal Dresses","Maxi Dress","Mini & Tunic Dress","Middi Dress","Petie Dresses","Plus Dresses","Wedding Guest Dresses","BHLND Weddings"];
+const NewArray = ["Accessories","Beauty & Wellness","Clothing","Dresses","Home & Feature","Jewelry","Petites","Plus","Shoes","bhlndWeddings","The Valentine's Day Shop","New Today: Clothing & Accessories","The Must-Haves","House & Hackney","Accessories","Beauty & Wellness","Clothing","Dresses","Home & Feature","Jewelry","Petites","Plus","Shoes","bhlndWeddings","The Valentine's Day Shop"];
+const Dresses = ["Shop All Dresses","New!","Top Rated Dresses","Occession & Party Dress","Loungr & Casual Dresses","Formal Dresses","Maxi Dress","Mini & Tunic Dress","Middi Dress","Petie Dresses","Plus Dresses","Wedding Guest Dresses","BHLND Weddings","Shop All Dresses","New!","Top Rated Dresses","Occession & Party Dress","Loungr & Casual Dresses","Formal Dresses","Maxi Dress","Mini & Tunic Dress","Middi Dress"];
 
 // const MenuItems = () => {
 //     return(

@@ -1,0 +1,16 @@
+
+
+.swiperClass{
+    /* border: 12px solid rgb(221, 18, 18); */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: white;
+    color: #373737;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    border-top-left-radius: 30px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    height: auto;
+ 
+}

@@ -17,7 +17,7 @@ import {
 export default function OnhoverProp({NewArray,title}) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <div className="App">
+    <div  className="App">
       <Flex align="center" justifyContent="center" >
         <Menu isOpen={isOpen}>
           <MenuButton
@@ -29,8 +29,8 @@ export default function OnhoverProp({NewArray,title}) {
           >
            <Text fontSize={20}>{title}</Text>
           </MenuButton>
-          <MenuList onMouseEnter={onOpen} onMouseLeave={onClose}>
-          <Grid  templateColumns='repeat(3, 1fr)'>
+          <MenuList position={"relative"} w={"600px"} zIndex={9} onMouseEnter={onOpen} onMouseLeave={onClose}>
+          <Grid templateColumns='repeat(3, 1fr)'>
             {NewArray?.map((el,i) => (
                 <MenuItem key={i}>{el}</MenuItem>
             ))}
