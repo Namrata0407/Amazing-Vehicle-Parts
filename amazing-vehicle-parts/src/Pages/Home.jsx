@@ -16,9 +16,14 @@ import styles from "../Styles/Home.module.css";
 import phone1 from "../Images/phone1.png";
 import phone2 from "../Images/phone2.png";
 import phone3 from "../Images/phone3.png";
-import topCategiores from "../Images/topCategory.png"
-
+import topCategiores from "../Images/topCategory.png";
+import topSellers from "../Images/topSellers.png";
 import SliderTwo from "../Components/SliderTwo";
+import SliderThree from "../Components/SliderThree";
+import costumerFav from "../Images/customer.png";
+import findMyStore from "../Images/findMyStore.png";
+
+
 
 function Home() {
   return (
@@ -119,6 +124,14 @@ function Home() {
           <UnderHoodCard />
         </Box>
 
+
+        
+ {/* ************************************************************************************************************************************ */}
+    
+    <Image marginTop={"20px"} src = {topSellers}/>
+
+<SliderThree/>
+
         {/* ***************************************************************************************************************************************** */}
 
         <SimpleGrid
@@ -185,10 +198,28 @@ function Home() {
           </Flex>
           <Divider h={"5px"} backgroundColor={"#ffcc00"} />
           </Box>
-
-
         </SimpleGrid>
+
+{/* ********************************************************************************************************************************************* */}
+
+   <Image marginTop={"20px"} marginBottom={"20px"} src ={costumerFav} alt = "customer rivew"/>
+   <SliderThree/>
+
+{/* ******************************************************************************************************************************************* */}
+      
+      <Image marginTop={"30px"} src = {findMyStore}/>
+
+  {/* ************************************************************************************************************************************** */}
+      
+      <div style={{ fontSize:"18px", color:"#000000", marginTop:"40px", lineHeight:"18.4px"}}
+      
+      >
+        *Restrictions apply: See coupon and promotion offer details</div>
       </Box>
+
+    
+
+    
     </>
   );
 }

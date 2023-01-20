@@ -10,6 +10,10 @@ import slider3 from "../Images/slider3.jpg";
 import slider4 from "../Images/slider4.jpg";
 import slider5 from "../Images/slider5.jpg";
 import slider6 from "../Images/slider6.jpg";
+import slider7 from "../Images/slider7.jpg";
+import sliderimgone from "../Images/sliderimgone.png";
+
+
 
 export default function Slider() {
   return (
@@ -28,6 +32,46 @@ export default function Slider() {
         modules={[Autoplay, Navigation]}
         className="mySwiper"
       >
+        <SwiperSlide>
+          <Image
+            width={"100%"}
+            height={"450px"}
+            src={sliderimgone}
+            alt="slider1"
+            zIndex={1}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image
+            width={"100%"}
+            height={"450px"}
+            src={slider7}
+            alt="slider1"
+            zIndex={1}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image
+            width={"100%"}
+            height={"450px"}
+            src={slider6}
+            alt="slider1"
+            zIndex={1}
+          />
+        </SwiperSlide>
+
+        <SwiperSlide>
+          <Image
+            width={"100%"}
+            height={"450px"}
+            src={slider5}
+            alt="slider1"
+            zIndex={1}
+          />
+        </SwiperSlide>
+
         <SwiperSlide>
           <Image
             width={"100%"}
@@ -58,6 +102,7 @@ export default function Slider() {
           />
         </SwiperSlide>
 
+
         <SwiperSlide>
           <Image
             width={"100%"}
@@ -68,25 +113,7 @@ export default function Slider() {
           />
         </SwiperSlide>
 
-        <SwiperSlide>
-          <Image
-            width={"100%"}
-            height={"450px"}
-            src={slider5}
-            alt="slider1"
-            zIndex={1}
-          />
-        </SwiperSlide>
 
-        <SwiperSlide>
-          <Image
-            width={"100%"}
-            height={"450px"}
-            src={slider2}
-            alt="slider1"
-            zIndex={1}
-          />
-        </SwiperSlide>
       </Swiper>
     </Box>
   );
