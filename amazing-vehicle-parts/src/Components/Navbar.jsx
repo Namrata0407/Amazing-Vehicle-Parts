@@ -26,6 +26,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon ,MoonIcon,SunIcon} from '@chakra-ui/icons';
 // import { NavLink } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import source from "../Images/img1.png";
 import source2 from "../Images/img2.png";
 
@@ -61,6 +62,7 @@ export default function Navbar() {
   return (
     <>
     <Image src={source2} alt = "error"/>
+   
       <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
@@ -78,9 +80,18 @@ export default function Navbar() {
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+              {/* {Links.map((link) => (
+                <NavLink key={link}>
+                  <Flex justifyContent={"center"} alignItems={"center"}>
+                  <Text fontSize={"50px"}>🚘</Text> {` ${link}`}
+                  </Flex>
+                
+                  </NavLink>
+              ))} */}
+              <Flex justifyContent={"center"} alignItems={"center"}>
+                  <Text fontSize={"50px"} marginLeft={"-10px"}>🚘</Text> 
+                  <Button>Add a Vehicle</Button>
+                  </Flex>
             </HStack>
           </HStack>
          
@@ -88,7 +99,7 @@ export default function Navbar() {
            <input placeholder='Search Here' style={{width: "100%",border:"1px solid grey"}} _focus={"none"} borderRadius={"none"} />
            <Button border={"1px solid blue"} borderRadius={"none"}>Search</Button>
            </Flex>
-             <Button>Choose a Store</Button>
+             <Button>Choose a Store  ⯆</Button>
            <Button onClick={toggleColorMode}>
                 {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
           </Button>
@@ -114,8 +125,14 @@ export default function Navbar() {
                 />
               </MenuButton>
               <MenuList >
-                <MenuItem>Login</MenuItem>
-                <MenuItem>SignUP</MenuItem>
+              <MenuItem>
+                   <RouterLink to="/login">
+
+                       Login
+                    
+                    </RouterLink>
+             </MenuItem>
+                <MenuItem>LogOut</MenuItem>
               </MenuList>
             </Menu>
           </Flex>

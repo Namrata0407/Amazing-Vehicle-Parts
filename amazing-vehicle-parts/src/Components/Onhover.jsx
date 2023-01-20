@@ -27,7 +27,9 @@ export default function OnhoverProp({NewArray,title}) {
             onMouseEnter={onOpen}
             onMouseLeave={onClose}
           >
-           <Text fontSize={20}>{title}</Text>
+           <Text fontSize={16} color={title === "Special Offers" ? "#cc0033" : null } 
+           fontWeight={title === "Special Offers" ? "bold" : null }
+           >{title}</Text>
           </MenuButton>
           <MenuList position={"relative"} w={"600px"} zIndex={9} onMouseEnter={onOpen} onMouseLeave={onClose}>
           <Grid templateColumns='repeat(3, 1fr)'>
@@ -35,11 +37,7 @@ export default function OnhoverProp({NewArray,title}) {
                 <MenuItem key={i}>{el}</MenuItem>
             ))}
              </Grid>
-            {/* <MenuItem>Download</MenuItem>
-            <MenuItem>Create a Copy</MenuItem>
-            <MenuItem>Mark as Draft</MenuItem>
-            <MenuItem>Delete</MenuItem>
-            <MenuItem>Attend a Workshop</MenuItem> */}
+           
           </MenuList>
         </Menu>
       </Flex>

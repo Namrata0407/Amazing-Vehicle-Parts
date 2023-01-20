@@ -40,36 +40,10 @@ const NavLink = ({ children }) => (
   </Link>
 );
 
-const NewArray = ["Accessories","Beauty & Wellness","Clothing","Dresses","Home & Feature","Jewelry","Petites","Plus","Shoes","bhlndWeddings","The Valentine's Day Shop","New Today: Clothing & Accessories","The Must-Haves","House & Hackney","Accessories","Beauty & Wellness","Clothing","Dresses","Home & Feature","Jewelry","Petites","Plus","Shoes","bhlndWeddings","The Valentine's Day Shop"];
-const Dresses = ["Shop All Dresses","New!","Top Rated Dresses","Occession & Party Dress","Loungr & Casual Dresses","Formal Dresses","Maxi Dress","Mini & Tunic Dress","Middi Dress","Petie Dresses","Plus Dresses","Wedding Guest Dresses","BHLND Weddings","Shop All Dresses","New!","Top Rated Dresses","Occession & Party Dress","Loungr & Casual Dresses","Formal Dresses","Maxi Dress","Mini & Tunic Dress","Middi Dress"];
+const NewArray = ["Accessories","Motorcycle Covers & Wellness","Comfort Accessories","Window Tint","Bulk Hose","Belt Components","Coolant Air Bleeders","Oil Absorbent","Analyzers","Engine Computers","Brushes & Vacuums","Brake Band Components","Motor Oil","AC Lubricants","Repair","Engine Oil Treatment & Additives","Inline 2-Cycle Motor Oil","Signs","AC Flushes & Solvents","Welding Helmets","Tools and Shop Equipment","Suspension","Coil Spring Hardware","Steering, Gears & Pumps"];
+const Dresses = ["Steering","Power Steering Coolers","Power Steering Adapters","Coil Spring Hardware","Miscellaneous Chassis Parts","Automatic Transmissions","Manual Transmissions","Automatic Transmission Components","Bearings & Bearing Kits","Brake Band Components","Actuator Cables & Valves","4-Wheel Drive (4WD) Hubs","Axle Beam Assemblies & Mounts","Axle Bearings","Air & Water Gauges","Amp Gauges","Fuel Gauges","Gauge Accessories","Meter Gauges","Starter Bushings","Coil Springs"];
 
-// const MenuItems = () => {
-//     return(
-//         <Menu>
-//         <MenuButton as={Link} rightIcon={<ChevronDownIcon />}>
-//           Actions
-//         </MenuButton>
-//         <MenuList>
-//             <Flex>
-//                 <Box>
-//                 <MenuItem>Download</MenuItem>
-//           <MenuItem>Create a Copy</MenuItem>
-//           <MenuItem>Mark as Draft</MenuItem>
-//           <MenuItem>Delete</MenuItem>
-//           <MenuItem>Attend a Workshop</MenuItem>
-//                 </Box>
-//                 <Box>
-//                 <MenuItem>Download</MenuItem>
-//           <MenuItem>Create a Copy</MenuItem>
-//           <MenuItem>Mark as Draft</MenuItem>
-//           <MenuItem>Delete</MenuItem>
-//           <MenuItem>Attend a Workshop</MenuItem>
-//                 </Box>
-//             </Flex>
-//         </MenuList>
-//       </Menu>
-//     )
-// }
+
 
 export default function BelowNavbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -80,20 +54,18 @@ export default function BelowNavbar() {
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
           <Flex gap={10}>
             <OnhoverProp NewArray={NewArray} title={"New!"} />
-            <OnhoverProp NewArray={Dresses} title={"Dresses"} />
-            <OnhoverProp NewArray={NewArray} title={"Clothing"} /> 
-            <OnhoverProp NewArray={Dresses} title={"Shoes"} /> 
-            <OnhoverProp NewArray={NewArray} title={"Accessories"} />
-            <OnhoverProp NewArray={Dresses} title={"Gifts"} />
-            <OnhoverProp NewArray={NewArray} title={"BHLDN Weddings"} />
-            <OnhoverProp NewArray={Dresses} title={"Home and Furniture"} />
-            <OnhoverProp NewArray={NewArray} title={"Beauty Wellness"} />
+            <OnhoverProp NewArray={Dresses} title={"Replacement Parts"} />
+            <OnhoverProp NewArray={NewArray} title={"Performance Parts"} /> 
+            <OnhoverProp NewArray={Dresses} title={"Accessories"} /> 
+            <OnhoverProp NewArray={NewArray} title={"Oil & Fluids"} />
+            <OnhoverProp NewArray={Dresses} title={"Special Offers"} />
+            <OnhoverProp NewArray={NewArray} title={"Orderd Lookup"} />
+            {/* <OnhoverProp NewArray={Dresses} title={"Home and Furniture"} /> */}
+            {/* <OnhoverProp NewArray={NewArray} title={"Beauty Wellness"} /> */}
           </Flex>  
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
-              {/* <Button onClick={toggleColorMode}>
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button> */}
+              
 
               <Menu>
                 <MenuButton
@@ -102,29 +74,9 @@ export default function BelowNavbar() {
                   variant={'link'}
                   cursor={'pointer'}
                   minW={0}>
-                  {/* <Avatar
-                    size={'sm'}
-                    src={'https://avatars.dicebear.com/api/male/username.svg'}
-                  /> */}
+                 
                 </MenuButton>
-                {/* <MenuList alignItems={'center'}>
-                  <br />
-                  <Center>
-                    <Avatar
-                      size={'2xl'}
-                      src={'https://avatars.dicebear.com/api/male/username.svg'}
-                    />
-                  </Center>
-                  <br />
-                  <Center>
-                    <p>Username</p>
-                  </Center>
-                  <br />
-                  <MenuDivider />
-                  <MenuItem>Your Servers</MenuItem>
-                  <MenuItem>Account Settings</MenuItem>
-                  <MenuItem>Logout</MenuItem>
-                </MenuList> */}
+               
               </Menu>
             </Stack>
           </Flex>
