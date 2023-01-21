@@ -1,13 +1,3 @@
-// function Login (){
-
-//     return(
-//         <>
-
-//         </>
-//     )
-// }
-// export default Login;
-
 
 import {
     Container,
@@ -192,16 +182,7 @@ export default function Login() {
                                                     <Input value={password} onChange={(e) => setPassword(e.target.value)} type="password" size="md" />
                                                 </InputGroup>
                                             </FormControl>
-                                            {/* <FormControl id="name">
-                          <FormLabel>Message</FormLabel>
-                          <Textarea
-                            borderColor="gray.300"
-                            _hover={{
-                              borderRadius: 'gray.300',
-                            }}
-                            placeholder="message"
-                          />
-                        </FormControl> */}
+                            
                                             <Stack
                                                 direction={{ base: 'column', sm: 'row' }}
                                                 align={'start'}
