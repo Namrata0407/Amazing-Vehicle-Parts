@@ -75,7 +75,7 @@ function Products() {
 {/* ************** Products ****************************** */}
                 <Box w={"76%"} height={"auto"} >
                   <Flex justifyContent={"space-between"} alignItems={"center"}>
-                    <Text fontFamily={""} fontSize={"30px"} color={"#26262c"}>Dresses</Text>
+                    {/* <Text fontFamily={""} fontSize={"30px"} color={"#26262c"}>Dresses</Text> */}
                     <Flex justifyContent={"space-between"} alignItems={"center"}>
                      Sort:  
                     <Select value={order} onChange={handleOrder}  width={"170px"}>
