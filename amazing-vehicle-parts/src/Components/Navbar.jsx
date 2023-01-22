@@ -25,10 +25,12 @@ import {
   Text
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon ,MoonIcon,SunIcon} from '@chakra-ui/icons';
-// import { NavLink } from "react-router-dom";
-import { Link as RouterLink } from "react-router-dom";
+import {Link as  RouterLink } from "react-router-dom";
+import namrata from "../Images/namrata.png";
+
 import source from "../Images/img1.png";
 import source2 from "../Images/img2.png";
+import { FaUserAlt } from "react-icons/fa";
 
 import {
     MDBContainer,
@@ -37,6 +39,10 @@ import {
     MDBInputGroup
   } from 'mdb-react-ui-kit';
 import BelowNavbar from './BelowNavbar';
+import { useState } from 'react';
+import { useContext,useEffect } from 'react';
+import { CartContext } from '../Contexts/CartContext';
+import { AuthContext } from '../Contexts/AuthContext';
 
 const Links = ['Add a Vehicle'];
 
@@ -55,9 +61,35 @@ const NavLink = ({ children }) => (
   </Link>
 );
 
+
+
+const getData = async (val) => {
+  if(val){
+    const res = await fetch(`https://json-server-m3p9.onrender.com/product?q=${val}`);
+    const data = await res.json();
+    return data; 
+  }
+
+}
+
+
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const [inputData,setInputData] = useState("");
+  const {setSearchData} = useContext(CartContext);
+  const {authState} = useContext(AuthContext);
+
+  const fetchedData =async (inputData) => {
+    const result = await getData(inputData);
+    // console.log(result);
+    setSearchData(result);
+  }
+
+ useEffect(() => {
+  fetchedData(inputData);
+ },[inputData]);
+console.log(inputData);
 
   return (
     <>
@@ -74,20 +106,16 @@ export default function Navbar() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <Box>
+              <RouterLink to="/">
               <Image w={"200px"} h={'60px'} marginLeft={'-15px'} marginTop={'-2px'} src={source} alt={"error"} />
+              </RouterLink>
+             
             </Box>
             <HStack
               as={'nav'}
               spacing={4}
               display={{ base: 'none', md: 'flex' }}>
-              {/* {Links.map((link) => (
-                <NavLink key={link}>
-                  <Flex justifyContent={"center"} alignItems={"center"}>
-                  <Text fontSize={"50px"}>🚘</Text> {` ${link}`}
-                  </Flex>
-                
-                  </NavLink>
-              ))} */}
+             
               <Flex justifyContent={"center"} alignItems={"center"}>
                   <Text fontSize={"50px"} marginLeft={"-10px"}>🚘</Text> 
                   <Button>Add a Vehicle</Button>
@@ -96,7 +124,7 @@ export default function Navbar() {
           </HStack>
          
            <Flex w={"50%"}>
-           <input placeholder='Search Here' style={{width: "100%",border:"1px solid grey"}} _focus={"none"} borderRadius={"none"} />
+           <input onChange={(e)=>setInputData(e.target.value)} placeholder='Search Here' style={{width: "100%",border:"1px solid grey"}} _focus={"none"} borderRadius={"none"} />
            <Button border={"1px solid blue"} borderRadius={"none"}>Search</Button>
            </Flex>
              <Button>Choose a Store  ⯆</Button>
@@ -119,12 +147,14 @@ export default function Navbar() {
                 variant={'link'}
                 cursor={'pointer'}
                 minW={0}>
-                <Avatar
-                  size={'sm'}
+                {authState.isAuth ? (<Avatar
+                  size={'md'}
                   src={
-                    'https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9'
+                    namrata
                   }
-                />
+                />) : (   
+                    <FaUserAlt marginLeft={"20px"} size={"25px"} />    
+                )}
               </MenuButton>
               <MenuList >
               <MenuItem>
