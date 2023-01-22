@@ -13,8 +13,10 @@ import {
   Grid,
   Text
 } from "@chakra-ui/react";
+import {Link as RouterLink} from "react-router-dom";
 
 export default function OnhoverProp({NewArray,title}) {
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <div  className="App">
@@ -34,7 +36,9 @@ export default function OnhoverProp({NewArray,title}) {
           <MenuList position={"relative"} w={"600px"} zIndex={9} onMouseEnter={onOpen} onMouseLeave={onClose}>
           <Grid templateColumns='repeat(3, 1fr)'>
             {NewArray?.map((el,i) => (
-                <MenuItem key={i}>{el}</MenuItem>
+                <RouterLink to="/products">
+                  <MenuItem key={i}>{el}</MenuItem>
+                </RouterLink>
             ))}
              </Grid>
            
