@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Login from "../Pages/Login";
 import Products from "../Pages/Products";
 import SingleProductPage from "../Pages/SingleProductPage";
+import PrivateRoute from "./PrivateRoutes";
 
 function AllRoutes(){
 
@@ -13,7 +14,11 @@ function AllRoutes(){
          <Route path="/login" element={<Login/>} />;
          <Route path="/products" element={<Products/>} />;
          <Route path="/products/:id" element={<SingleProductPage/>} />;
-         <Route  path="/cart" element={<CartPageDataBlue/>}/>
+         <Route  path="/cart" element={
+            <PrivateRoute>
+              <CartPageDataBlue/>
+            </PrivateRoute>
+        }/>
         </Routes>
     )
 }
