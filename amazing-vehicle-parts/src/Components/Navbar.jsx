@@ -78,7 +78,7 @@ export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const [inputData,setInputData] = useState("");
   const {setSearchData} = useContext(CartContext);
-  const {authState} = useContext(AuthContext);
+  const {authState,logoutUser} = useContext(AuthContext);
 
   const fetchedData =async (inputData) => {
     const result = await getData(inputData);
@@ -163,8 +163,8 @@ console.log(inputData);
                        Login
                     
                     </RouterLink>
-             </MenuItem>
-                <MenuItem>LogOut</MenuItem>
+             </MenuItem >
+                <MenuItem onClick={logoutUser}>LogOut</MenuItem>
               </MenuList>
             </Menu>
           </Flex>
